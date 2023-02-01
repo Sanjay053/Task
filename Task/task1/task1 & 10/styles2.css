@@ -1,0 +1,146 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: #948c8c;
+}
+
+.main{
+
+width: 100%;
+height:100%;
+margin-top:50px;
+}
+
+.parent1{
+width: 100%;
+
+}
+
+.p1c1{
+    width: 300px;
+    background-color: red;
+    height: 20px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.p1c2{
+    width: 300px;
+    background-color: #4B0082;
+    height: 20px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.parent2{
+    width: 100%;
+    
+    }
+    
+    .p2c1{
+        width: 300px;
+        background-color: #BDB76B;
+        height: 50px;
+        padding: 20px;
+        margin: 20px;
+    }
+    
+    .parent3{
+        width: 100%;
+        
+        }
+        
+        .p3c1{
+            width: 300px;
+            background-color: #008000;
+            height: 20px;
+            padding: 20px;
+            margin: 20px;
+        }
+        
+        .p3c2{
+            width: 300px;
+            background-color: #FF00FF;
+            height: 20px;
+            padding: 20px;
+            margin: 20px;
+        }
+    .p3c3{
+        width: 300px;
+        background-color: #800080;
+        height: 20px;
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .parent4{
+        width: 100%;
+        
+        }
+        
+        .p4c1{
+            width: 300px;
+            background-color: #D2691E;
+            height: 20px;
+            padding: 20px;
+            margin: 20px;
+        }
+        
+        .p4c2{
+            width: 300px;
+            background-color: #ADFF2F;
+            height: 20px;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .parent5{
+            width: 100%;
+            
+            }
+            
+            .p5c1{
+                width: 300px;
+                background-color: #008000;
+                height: 3px;
+                padding: 20px;
+                margin: 20px;
+            }
+            
+            .p5c2{
+                width: 300px;
+                background-color: #20B2AA;
+                height: 3px;
+                padding: 20px;
+                margin: 20px;
+            }
+            .p5c3{
+            width: 300px;
+            background-color: #800000;
+            height: 3px;
+            padding: 20px;
+            margin: 20px;
+            }
+            .p5c4{
+                width: 300px;
+                background-color: #0000FF;
+                height: 3px;
+                padding: 20px;
+                margin: 20px;
+            }
+        
+        .parent6{
+            width: 100%;
+        }
+
+        .p6c1{
+            width: 300px;
+            background-color: #410909;
+            height: 0.5px;
+            padding: 20px;
+            margin: 20px;
+            margin-bottom: 30px;
+        }
+
+
+
