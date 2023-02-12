@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <style>
+        ul{
+            width: 100px;
+            cursor: pointer;
+        }
+      .red {
+        background-color: red;
+      }
+      .green {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <ul id="nameList">
+      <li>Sankar</li>
+      <li>Aswin</li>
+      <li>Iswariya</li>
+      <li>Dinesh</li>
+      <li>Manoj</li>
+      <li>Anish</li>
+      <li>Usha</li>
+      <li>Megana</li>
+      <li>Sana</li>
+      <li>Pravin</li>
+    </ul>
+    
+    <script>
+      const nameList = document.querySelector("#nameList");
+      const names = nameList.getElementsByTagName("li");
+      
+      for (let i = 0; i < names.length; i++) {
+        names[i].addEventListener("click", function() {
+          const name = names[i].textContent;
+          const firstLetter = name[0].toLowerCase();
+          
+          if (['a', 'e', 'i', 'o', 'u'].includes(firstLetter)) {
+            names[i].classList.add("red");
+          } else {
+            names[i].classList.add("green");
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
