@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="item">I</div>
+    <div id="item">love</div>
+    <div id="item">coding</div>
+    <div id="item">very much</div>
+    
+    <script>
+        let answer="";
+        const content = document.querySelectorAll('#item');
+        content.forEach((div) => {
+          div.addEventListener('click', () => {
+            const content = div.innerHTML;
+            answer += content +"  ";
+            alert(answer);
+          });
+        });
+    </script>
+</body>
+</html>

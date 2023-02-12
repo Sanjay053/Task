@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+#txt{
+    width: 300px;
+    margin: 10px;
+}
+
+div{
+    width: 300px;
+    height: 80px;
+    margin: 10px;
+    border: 2px solid ;
+}
+
+</style>
+<body>
+    <input type="text" name="txt" id="txt" placeholder="Enter something">
+    <input type="button" name="btn" id="btn" value="show" onclick="displayText()">
+    <div id="showText">
+
+    </div>
+</body>
+<script>
+    function displayText(){
+       const content= document.getElementById("txt").value;
+       alert(content);
+       document.getElementById("showText").innerHTML=content;
+       }
+</script>
+</html>
