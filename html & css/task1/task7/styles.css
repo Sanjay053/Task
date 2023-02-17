@@ -1,0 +1,235 @@
+body{
+    margin: 0px;
+}
+.parent{
+    width: 100%;
+    max-width: 1800px;
+    min-width: 1400px;
+    height: 713px;
+    position: relative;    
+    background-color: var(--color1);
+}
+
+:root{
+    --color1:#9370DB;
+}
+
+.pink{
+    color: palevioletred;
+       
+}
+
+.blue{
+    color: aqua; 
+}
+
+.yellow{
+    color: yellow;  
+}
+
+.child1{
+    width: 300px;
+    height: 650px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 20px;
+    background-color: aliceblue;
+    z-index: 1;
+    border-radius: 10px 0px 0px 10px;
+}
+
+img{
+    width: 75px;
+    height: 75px;
+    margin: 30px;
+    border-radius:100px ;
+}
+
+.profile p{
+    position: absolute;
+    margin-top: -100px;
+    margin-left: 120px;
+    font-size: 20px;
+}
+
+.profile p span{
+    color: var(--color1);
+    font-size: 25px;
+    font-weight: bold;
+}
+hr{
+    width:230px;
+    margin-left: 30px;
+    border:2px solid #9370DB;
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+.set{
+margin-left: 30px;
+}
+
+.task-body{
+    margin-bottom: 30px;
+}
+
+.fa-calendar{
+    margin-right: 20px;
+}
+
+.task{
+    margin-left: 35px;
+}
+
+.plus{
+margin-left: 20px;
+
+}
+
+.fa-clock-rotate-left{
+
+    margin-bottom: 30px;
+}
+.child2{
+    width: 800px;
+    height: 650px;
+    position: absolute;
+    margin-left: 400px;
+
+}
+
+h2{
+    width: 300px;
+    height: auto;
+    margin-top: 50px;
+   
+}
+
+h1{
+    margin-top: -20px;
+    margin-left: -300px;
+    color: white;
+}
+
+h2{
+    margin-left: -400px;
+    color: white;
+}
+
+.first-text{
+    font-size: 20px;
+}
+
+.box1{
+    width: 800px;
+    max-width: 700px;
+    min-width: 400px;
+    height: 3em;
+    margin-left: 100px;
+    background-color: white;
+    border-radius: 20px;
+    
+    margin-bottom: 40px;
+}
+
+.box1 p {
+    padding-top:10px;
+    
+}
+
+.box1 span{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.box1 p .pink{
+    margin-left: 20px;
+}
+
+.box1 p .blue{
+    margin-left: 16px;
+    margin-right: 0px;
+
+}
+
+
+input[type="text"]{
+    border: 0px solid white ;
+    text-decoration: none;
+    margin-left: 20px;
+    width: 240px;
+    height:2em ;
+
+       
+}
+
+.fa-clock{
+    margin-left: 220px;
+    font-size: 20px;
+}
+
+.fa-calendar-week{
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.shedule{
+    width: 600px;
+    height: 3em;
+    margin-left: 75px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.shedule p {
+    padding-top: 15px;
+}
+
+.shedule p .pink{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.shedule p .blue{
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.shedule p .yellow{
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.shedule p .sp{
+    margin-left: 360px;
+}
+p .fa-circle-check{
+    margin-left:20px;
+}
+
+.sp1{
+    margin-left: 297px;
+}
+
+
+p .fa-circle{
+    margin-left: 18px;
+}
+
+.sp2{
+    margin-left: 305px;
+}
+
+
+p .fa-circle{
+    margin-left: 18px;
+}
+
+.sp3{
+    margin-left: 255px;
+}
+
+
+p .fa-circle{
+    margin-left: 18px;
+}
