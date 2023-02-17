@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #color{
+        width: auto;
+        display: flex;
+             
+    }
+
+    div{
+
+        width: 300px;
+        height: auto;
+        margin-top: 20px;
+    }
+    table,td{
+        margin-top: 10px;
+        border: 1px solid black;
+        text-align: center;
+    }
+</style>
+<body>
+    <!-- button for click to change the bg-color -->
+    <button class="button">click</button>
+    <table>
+        <tr>
+            <th>Color</th>
+            <th>Number of Repeat </th>
+        </tr>
+        <tr>
+            <td>Blue</td>
+            <td id="blue"></td>
+        </tr>
+        <tr>
+            <td>Red</td>
+            <td id="red"></td>
+        </tr>
+        <tr>
+            <td>Yellow</td>
+            <td id="yellow"></td>
+        </tr>
+        <tr>
+            <td>orange</td>
+            <td id="orange"></td>
+        </tr>
+        <tr>
+            <td>Skyblue</td>
+            <td id="skyblue"></td>
+        </tr>
+        <tr>
+            <td>Purple</td>
+            <td id="purple"></td>
+        </tr>
+        <tr>
+            <td>Gray</td>
+            <td id="gray"></td>
+        </tr>
+        <tr>
+            <td>Violet</td>
+            <td id="violet"></td>
+        </tr>
+        <tr>
+            <td>Pink</td>
+            <td id="pink"></td>
+        </tr>
+
+            </table>
+
+    <!-- javaScript  code-->
+
+    <script>
+        
+        const btn = document.querySelector('.button');          // btn for button element
+        // array contains color names
+        const colors =['red','yellow','orange','skyblue','purple','gray','violet','pink'];
+        const colorCount ={};            // create empty object to store the color index
+
+        btn.addEventListener('click', () =>{
+            const rand = Math.floor(Math.random() * colors.length);        //random index form colors
+            const color = colors[rand];             //color contain random colors index
+            
+            document.body.style.backgroundColor = color;         //body color change taking the color value
+            console.log(color);
+
+            colorCount[color] = (colorCount[color] || 0) + 1;       //count of each colors 
+            console.log("value of " + color + " is " + colorCount[color]);
+            document.querySelector(`#${color}`).innerHTML = colorCount[color];      // display count in table
+            
+        });
+    </script>
+</body>
+</html>
