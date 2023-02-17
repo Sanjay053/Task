@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* style for container*/
+    .container {
+        width: auto;
+        height: auto;
+      }
+      .red {
+        background-color: red;
+      }
+      .green {
+        background-color: green;
+      }
+      .blue {
+        background-color: blue;
+      }
+      .yellow {
+        background-color: yellow;
+      }
+      /* style for the div*/
+      div {
+        width: 100px;
+        height: 30px;
+        margin: 40px;
+        font-size: large;
+        font-weight: bold;
+        background-color: lightgray;
+        border: 1px solid black;
+        display: flex;
+      }
+      
+</style>
+<body>
+    <!-- inside a container there is 4 div  -->
+    <div class='container'>
+        <div class="box red">box1</div>
+        <div class="box blue"> box2</div>
+        <div class="box green">box3</div>
+        <div class="box yellow">box4</div>
+      </div>
+
+  <!-- javaScript  -->
+      <script>
+        // select all boxes
+        const boxes = document.querySelectorAll('.box');
+
+        boxes.forEach((box, i) => {
+              
+          box.addEventListener('click', () =>{
+            //hide clicked box
+            console.log('hide the ' + boxes[i].innerHTML);
+            box.style.display = 'none';
+            boxes.forEach((otherBox, j) =>{
+              //show other boxes
+              if(j !== i) {
+                otherBox.style.display = 'block';
+                console.log('other boxes ');
+              }
+            });
+          });
+        });
+      </script>
+</body>
+</html>
