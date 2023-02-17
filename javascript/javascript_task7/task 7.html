@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js task7</title>
+    <style>
+        
+        p{
+            width: 400px;
+            height: 150px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+            <!-- three input type -->
+    <input type="type" name="min" value="0" id="min">
+    <input type="text" name="max" value="100" id="max">
+    <input type="text" name="divs" id="divs">
+
+                <!-- button -->
+    <input type="button" name="btn" value="check" id="btn">
+
+        <!-- para to store the values -->
+    <p id="display"></p>
+    
+</body>
+<script>
+    const btn = document.querySelector('#btn'); 
+  
+    btn.addEventListener('click', () =>{       
+        const firstNumber = document.querySelector('#min').value;       // min value
+        const lastNumber = document.querySelector('#max').value;      // max value
+        const divisibleBy = document.querySelector('#divs').value;        // divisible value
+         
+        const display = document.querySelector('#display');                 // display answer divided by divisibleBy
+
+        const divisibleNumbers = [];                                  // create empty array to store divisible numbers
+        for(let i= firstNumber; i<= lastNumber; i++){
+            if(i % divisibleBy === 0){  // if remider is 0
+                console.log(i);
+                divisibleNumbers.push(i);  // push i 
+
+            }
+            display.textContent = divisibleNumbers.join(", "); // join the comma and space to display 
+        }
+            
+    });
+    
+  
+</script>
+</html>
