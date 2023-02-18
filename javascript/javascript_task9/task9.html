@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js task 9</title>
+</head>
+<body>
+    <!-- nothing in html 
+            ....    
+    -->
+
+    <script>
+        
+        let isShiftPressed = false;
+
+document.addEventListener('keydown', (event) => {
+  switch (event.key) {
+    case 'Backspace':
+      handleBackspace();
+      break;
+    case ' ':
+      handleSpace();
+      break;
+    case 'Enter':
+      handleEnter();
+      break;
+    case 'CapsLock':
+      event.preventDefault();
+      console.log('capslock');
+      break;
+    case 'Shift':
+      isShiftPressed = true;
+      break;
+    default:
+      handleText(event);
+  }
+});
+
+document.addEventListener('keyup', (event) => {
+  if (event.key === 'Shift') {
+    isShiftPressed = false;
+  }
+});
+
+function handleBackspace() {
+  const body = document.querySelector('body');
+  const lines = body.innerText.split(/\r?\n/);
+  const lastLine = lines[lines.length - 1];
+  const newLastLine = lastLine.slice(0, -1);
+  if (newLastLine.length > 0) {
+    lines[lines.length - 1] = newLastLine;
+  } else {
+    lines.pop();
+  }
+  body.innerHTML = lines.join('<br>');
+}
+
+
+function handleSpace() {
+  event.preventDefault();
+  document.querySelector('body').innerHTML += "&nbsp;";
+  console.log("space");
+}
+
+function handleEnter() {
+  document.querySelector('body').innerHTML += "<br>";
+}
+
+function handleText(event) {
+  const isCapsLockOn = event.getModifierState('CapsLock');
+  const key = isShiftPressed ? event.key.toUpperCase() : isCapsLockOn ? event.key.toUpperCase() : event.key;
+  document.querySelector('body').innerHTML += key;
+}
+
+
+
+       
+          
+    </script>
+</body>
+</html>
