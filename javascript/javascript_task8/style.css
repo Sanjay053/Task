@@ -1,0 +1,71 @@
+#keyboard-outline{
+    max-width: 1300px;
+    min-width: 400px;
+    position: fixed;
+    bottom: 0;
+    margin-left:calc(50% - 650px);
+    height: 400px;
+    padding: 0;
+    background-color: rgb(147, 176, 147);
+}
+/* display text content */
+#display{
+    width: 1200px;
+    height: 280px;
+    border: 1px double black;
+    position: fixed;
+    top: 10px;
+    margin-left:calc(50% - 600px) ;
+    font-size: 24px;
+    font-weight: bold;
+}
+/* first row in the keyboard */
+.row{
+display: flex;
+flex-direction: row;
+
+}
+.row1{
+    margin: 0 200px ;
+}
+/* keyboard buttons  */
+.key{
+    width: 80px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* second row in the keyboard */
+.row2{
+    margin: 0 250px;
+}
+
+/* third row in the keyboard */
+
+.row3{
+    margin: 0 190px;
+}
+/* fourth row in the keyboard */
+.row4{
+    margin: 0 200px;
+}
+
+.row5{
+    margin:0 350px ;
+}
+
+.keyspace{
+    width: 600px;
+    height: 60px;
+    background-color: antiquewhite; 
+    border-radius: 5px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

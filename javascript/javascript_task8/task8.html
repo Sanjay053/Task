@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js Task 8</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    
+</head>
+
+<body>
+    <!-- screen -->
+    <textarea id="display"></textarea>
+    <!-- keyboard -->
+    <div id="keyboard-outline">
+        <div class="row row1">
+            <button class="key" data-key ="49">1</button>
+            <button class="key" data-key ="50">2</button>
+            <button class="key" data-key ="51">3</button>
+            <button class="key" data-key ="52">4</button>
+            <button class="key" data-key ="53">5</button>
+            <button class="key" data-key ="54">6</button>
+            <button class="key" data-key ="55">7</button>
+            <button class="key" data-key ="56">8</button>
+            <button class="key" data-key ="57">9</button>
+            <button class="key" data-key ="48">0</button>
+            <!-- backspace to delete single letter -->
+            <button class="key" data-key ="8">X</button>
+        </div>
+        <div class="row row2">
+            <button class="key" data-key="113">q</button>
+            <button class="key" data-key="119">w</button>
+            <button class="key" data-key="101">e</button>
+            <button class="key" data-key="114">r</button>
+            <button class="key" data-key="116">t</button>
+            <button class="key" data-key="121">y</button>
+            <button class="key" data-key="117">u</button>
+            <button class="key" data-key="105">i</button>
+            <button class="key" data-key="111">o</button>
+            <button class="key" data-key="112">p</button>
+        </div>
+        <div class="row row3">
+            <!-- capital letter for cap -->
+            <button class="key" data-key="20">CAP</button>    
+            <button class="key" data-key="97">a</button>
+            <button class="key" data-key="115">s</button>
+            <button class="key" data-key="100">d</button>
+            <button class="key" data-key="102">f</button>
+            <button class="key" data-key="103">g</button>
+            <button class="key" data-key="104">h</button>
+            <button class="key" data-key="106">j</button>
+            <button class="key" data-key="107">k</button>
+            <button class="key" data-key="108">l</button>
+            <button class="key" data-key="16"><i class="fa-solid fa-arrow-turn-up"></i></button>
+        </div>
+        <div class="row row4">
+            <!-- tick for ensure that typing is complete -->
+            <button class="key keysp" data-key="13"><i class="fa-solid fa-circle-check"></i></button>
+            <button class="key" data-key="122">z</button>
+            <button class="key" data-key="120">x</button>
+            <button class="key" data-key="99">c</button>
+            <button class="key" data-key="118">v</button>
+            <button class="key" data-key="98">b</button>
+            <button class="key" data-key="110">n</button>
+            <button class="key" data-key="109">m</button>
+            <button class="key" data-key="188">,</button>
+            <button class="key" data-key="190">.</button>
+            <button class="key" data-key="191">?</button>
+        </div>
+        <div class="row row5">
+            <!-- spacebar used to space between letters -->
+            <button class="key keyspace" data-key="32"><i class="fa-solid fa-minus"></i></button>
+        </div>
+    </div>
+</body>
+
+<script src="javascript.js" ></script>
+</html>

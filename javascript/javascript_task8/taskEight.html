@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Keyboard</title>
+    <style>
+        #display-screen {
+            font-size: larger;
+            width: 100%;
+            height: 50vh;
+            background-color: antiquewhite;
+            white-space: pre-line;
+        }
+
+        #keyboard {
+            padding: 20px;
+            text-align: center;
+        }
+
+        button {
+            min-width: 100px;
+            min-height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="display-screen"></div>
+    <div id="keyboard">
+        <div>
+            <button data-key="49">1</button>
+            <button data-key="50">2</button>
+            <button data-key="51">3</button>
+            <button data-key="52">4</button>
+            <button data-key="53">5</button>
+            <button data-key="54">6</button>
+            <button data-key="55">7</button>
+            <button data-key="56">8</button>
+            <button data-key="57">9</button>
+            <button data-key="48">0</button>
+            <button data-key="8">backspace</button>
+        </div>
+        <div>
+            <button data-key="113">Q</button>
+            <button data-key="119">W</button>
+            <button data-key="101">E</button>
+            <button data-key="114">R</button>
+            <button data-key="116">T</button>
+            <button data-key="121">Y</button>
+            <button data-key="117">U</button>
+            <button data-key="105">I</button>
+            <button data-key="111">O</button>
+            <button data-key="112">P</button>
+        </div>
+        <div>
+            <button data-key="20">capslock</button>
+            <button data-key="97">A</button>
+            <button data-key="115">S</button>
+            <button data-key="100">D</button>
+            <button data-key="102">F</button>
+            <button data-key="103">G</button>
+            <button data-key="104">H</button>
+            <button data-key="106">J</button>
+            <button data-key="107">K</button>
+            <button data-key="108">L</button>
+            <button data-key="13">Enter</button>
+        </div>
+        <div>
+            <button data-key="16">shift</button>
+            <button data-key="122">Z</button>
+            <button data-key="120">X</button>
+            <button data-key="99">C</button>
+            <button data-key="118">V</button>
+            <button data-key="98">B</button>
+            <button data-key="110">N</button>
+            <button data-key="109">M</button>
+            <button data-key="16">shift</button>
+        </div>
+        <div>
+            <button data-key="32">space bar</button>
+        </div>
+    </div>
+
+    <script>
+        let keyBoard = document.querySelector('#keyboard');
+        let display = document.querySelector('#display-screen');
+        let letters = '';
+        let shiftCheck = false;
+        let capsLockCheck = -1;
+
+        keyBoard.addEventListener('click', (event) => {
+            let key = event.target.getAttribute('data-key');
+
+            switch (key) {
+                // space bar
+                case '32':
+                    letters += ' ';
+                    break;
+
+                // enter
+                case '13':
+                    letters += '\n';
+                    break;
+
+                // backspace
+                case '8':
+                    letters = letters.slice(0, -1);
+                    break;
+
+                // shift flag
+                case '16':
+                    shiftCheck = true;
+                    break;
+
+                // capslock flag
+                case '20':
+                    capsLockCheck *= -1;
+                    break;
+
+                default:
+                    // codition for alphabets
+                    if (key >= 97 && key <= 123) {
+                        // condition for shift key or caps key
+                        if (shiftCheck || capsLockCheck > 0) {
+                            key = key - 32;
+
+                            // if shift key is true change the flag to false
+                            if (shiftCheck) {
+                                shiftCheck = false;
+                            }
+                        } 
+                    }  
+                letters += String.fromCharCode(key);
+            }
+            display.innerHTML = letters;
+        });
+    </script>
+
+</body>
+
+</html>
