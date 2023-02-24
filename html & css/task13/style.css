@@ -7,12 +7,11 @@ body{
 
 @font-face {
     font-family:"sofaripro" ;
-    src: url("KG Primary Penmanship 2 W00 Rg.ttf");
+    src: url('Quicksand-VariableFont_wght.ttf');
 }
 
 *{
     font-family: sofaripro;
-    
     
 }
 
@@ -25,6 +24,7 @@ body{
     width: 1530px;
     height: 710px;
     position: absolute;
+    left: calc(50% - 765px);
 }
 .top-right{
     width: 400px;
@@ -71,8 +71,7 @@ body{
 h1{
     width: 60px;
     color: rgba(0, 0, 0, 0.6);
-    border-bottom: 5px solid var(--color1);
-    text-decoration: dashed;
+    text-decoration: underline var(--color1) 5px;
     font-size: 24px;
     font-weight: bold;
 }
@@ -91,16 +90,19 @@ input[type="text"],input[type="password"]{
 }
 
 fieldset{
-    border: 0;
+    border: 0px;
 }
 
 legend{
-    font-size: 20px;
-    color: var(--colorb);
+    
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--colorb)
 }
 
 label{
-    font-size: larger;
+    font-size: small;
+    font-weight: bold;
     color: var(--colorb);
 }
 
@@ -120,6 +122,8 @@ label{
     font-weight: bold;
 }
 .sign{
+    font-size: small;
+    font-weight: bold;
     color: var(--colorb);
 }
 p{
@@ -136,7 +140,8 @@ a{
 
 .logo{
     margin-left: 63px;
-    color: rgba(0, 0, 0, 0.8);
+    font-size: small;
+    color: rgba(0, 0, 0, 0.6);
     font-weight: bolder;
 }
 
@@ -146,7 +151,7 @@ a{
 }
 
 .fa-brands{
-    font-size: 30px;
+    font-size: 45px;
     margin-left: 15px;
     opacity: 0.6;
 }
