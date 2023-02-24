@@ -1,0 +1,118 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    color : white;
+    
+
+}
+.main {
+    width: 650px;
+    height: 650px;
+    position: absolute;
+    top: calc(50% - 325px);
+    left: calc(50% - 325px);
+}
+
+.red{
+    width: 305px;
+    height: 305px;
+    border-radius: 20px 20px 0 20px;
+    background: red;    
+    z-index: 1;
+    position: absolute;
+    top: calc(50% - 290px);
+    left: calc(50% - 290px);
+}
+
+.green{
+    width: 305px;
+    height: 305px;
+    position: absolute;
+    background: #47a747;
+    top: calc(50% - 290px);
+    left: calc(100% - 308px);
+    border-radius: 20px 20px 20px 0;
+    z-index: 1;
+}
+
+.orange{
+    width: 305px;
+    height: 305px;
+    position: absolute;
+    top: calc(50% + 20px);
+    left: calc(50% - 290px);
+    border-radius: 20px 0 20px 20px;
+    background: orange;
+    z-index: 1;
+}
+
+.blue{
+    width: 305px;
+    height: 305px;
+    position: absolute;
+    top: calc(50% + 20px);
+    left: calc(50% + 17px);
+    background: #171771;
+    border-radius: 0 20px 20px 20px;
+    z-index: 1;
+}
+
+p{
+    
+    font-size: 20px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+    .para {
+        margin-top: 30%;
+    
+}
+
+.g{
+background-color: #625858;
+display: block;
+position: absolute;
+border-radius: 10px 10px 0 0;
+}
+
+.top-left{
+    width: 100px;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 2px;
+    top: calc(50% - 320px);
+    left: calc(25% - 40px);
+}
+
+.top-right{
+    width: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 2px;
+    top: calc(50% - 320px);
+    left: calc(75% - 75px);
+}
+
+.left-top{
+    width: 150px;
+    padding: 10px 0px 5.6px 60px;
+    transform: rotate(-90deg);
+    left: calc(0% - 85px);
+    top: calc(25% - 0px);
+}
+
+.left-bottom{
+    width: 150px;
+    padding: 10px 10px 5.6px 40px;
+    transform: rotate(-90deg);
+    top: calc(75% - 15.6px);
+    left: calc(0% - 80px);
+}
