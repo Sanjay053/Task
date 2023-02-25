@@ -1,0 +1,39 @@
+.bg-img{
+    background-image: url("com.jpg");
+    background-size: contain;
+}
+
+*{
+    color: white;
+}
+
+form{
+    background-color: rgba(4, 90, 90, 0.5);
+    padding: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.row{
+
+    margin-bottom: 20px;
+}
+
+input, select{
+    width: 250px;
+    color: rgba(255, 255, 255);
+    padding:2px 0px 2px 5px ;
+}
+
+
+#country option{
+color: black;
+}
+
+button{
+    width: 220px;
+}
+
+    input.transparent-input{
+       background-color:transparent !important;
+       border:1px solid white !important;
+    }
