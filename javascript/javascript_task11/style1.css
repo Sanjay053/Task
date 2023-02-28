@@ -1,15 +1,17 @@
 .bg-img{
+    width: 100%;
     background-image: url("com.jpg");
     background-size: contain;
 }
 
-*{
+h1,footer{
     color: white;
 }
 
 form{
     background-color: rgba(4, 90, 90, 0.5);
     padding: 50px;
+    color: white;
     border: 1px solid rgba(255, 255, 255, 0.6);
 }
 
@@ -33,7 +35,7 @@ button{
     width: 220px;
 }
 
-    input.transparent-input{
-       background-color:transparent !important;
-       border:1px solid white !important;
-    }
+.transparent-input{
+     background-color:transparent !important;
+    border:1px solid white !important;
+}

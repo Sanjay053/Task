@@ -10,22 +10,14 @@
 </head>
 <body>
 
-  <!-- invalid submit alert -->
-  <div class="alert alert-danger" role="alert" style="display:none;">
-    Please fill out all required fields before submitting.
-  </div>
-
-  <!-- valid submit alert -->
-  <div class="alert alert-success" role="alert" style="display:none;">
-    All required fields filled successfully for submitting.
-  </div>
   <div class="bg-img">
     <!-- opening container -->
     <div class="container mb-5">
       <!-- heading -->
       <h1 class="text-center font-monospace">PRODUCT ORDER FORM</h1>
+
       <!-- form tag -->
-        <form action="/task11/" method="post" class="w-100 needs-validation" novalidate>
+        <form class="w-100 needs-validation" autocomplete="on" novalidate>
           
           <!-- Firstname & Lastname -->
           <div class="row">
@@ -66,7 +58,7 @@
               <input type="tel" name="telcode" id="telcode" value="+91" class="form-control transparent-input text-white" required>
             </div>
             <div class="col-sm-2">
-              <input type="number" name="phone" id="phone" min="10" max="11" placeholder="??????????" class="form-control transparent-input text-white" required>
+              <input type="tel" name="phone" id="phone" pattern="[0-9]{10}" placeholder="??????????" class="form-control transparent-input text-white" required>
             </div>
           </div>
           <!-- Billing Address -->
@@ -124,7 +116,7 @@
               </div>
               <div class="col-sm-1">:</div>
               <div class="col-sm-3">
-                <select name="country" id="country" class="form-control transparent-input" required>
+                <select name="country" id="country" class="form-control transparent-input text-white" required>
                   <option selected value="Country">Country</option>
                   <option value="india">India</option>
                   <option value="america">America</option>
@@ -136,12 +128,36 @@
             </div>
             <div class="row justify-content-center">
               <div class="col-sm-3">
-                <button type="submit" class="btn btn-primary">PLACE ORDER</button>
+                <!-- <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"></button> -->
+                <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  PLACE ORDER
+                </button>
               </div>
-              <div class="col-sm-3">
-                <button type="reset" class="btn btn-warning">RESET</button>
-              </div>
-             
+              <!-- Modal -->
+<div class="modal fade text-dark" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal validation</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      </div>
+      <div class="modal-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col text-center">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
+            </div>
+          </div>          
+        </div>
+      </div>
+    </div>
+  </div>
+      </div>      
+            <div class="col-sm-3">
+              <button type="reset" class="btn btn-warning">RESET</button>
+            </div>             
             </div>
         </form>
         <footer>
@@ -149,32 +165,33 @@
             <a href="/" class="link-danger"> W3layouts</a>
           </div>
         </footer>
+      </div>     
+      </div>
 
-      </div>       
 
-  </div>
-
-                                        <!-- script -->
+     <!-- script -->
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script>
       "use strict";
       
         const form = document.querySelector('.needs-validation');
-        const alert = document.querySelector('.alert');
+        const popup = document.querySelector('.modal-body');
         //event listener for form submit 
         form.addEventListener('submit', (event) => {
             //check is all the required details are filled if not then show error 
           if (!form.checkValidity()) {
                 event.preventDefault();
                 event.stopPropagation();
-                alert.style.display = 'block'; // display alert for warning
+                popup.style.backgroundColor ='rgba(255,0,0,0.5)'
+                popup.innerHTML = 'failed';
             }
-          else {
-            document.querySelector('.alert-success').style.display = 'block' // else it show success message
-                alert.style.display = 'none';
-            }
+          else{
+            popup.style.backgroundColor ='rgba(0,255,0,0.5)'
+            popup.innerHTML = 'Success'
+          }
           form.classList.add('was-validated');
+          
         });
 
       
