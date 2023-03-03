@@ -1,22 +1,27 @@
 body{
     margin: 0px;
+    font-family: sans-serif;
+    overflow: hidden;
 }
 .parent{
     width: 100%;
-    max-width: 1800px;
-    min-width: 1400px;
-    height: 713px;
-    position: relative;    
+    max-width: 1400px;
+    min-width: 1200px;
+    height: 670px;
+    margin:20px;
+    border-radius: 20px;
+    position: absolute;    
+    left: calc(50% - 700px);
     background-color: var(--color1);
 }
 
 :root{
     --color1:#9370DB;
+    --color2:#FF00FF;
 }
 
 .pink{
-    color: palevioletred;
-       
+    color: palevioletred;       
 }
 
 .blue{
@@ -45,6 +50,10 @@ img{
     border-radius:100px ;
 }
 
+.plus, [class$=left], [class$=gear], .space, [class$=circle]{
+    color: rgba(0, 0, 0, 0.2);
+}
+
 .profile p{
     position: absolute;
     margin-top: -100px;
@@ -64,50 +73,31 @@ hr{
     margin-top: 0px;
     margin-bottom: 40px;
 }
-.set{
-margin-left: 30px;
-}
-
-.task-body{
-    margin-bottom: 30px;
-}
-
-.fa-calendar{
-    margin-right: 20px;
-}
-
-.task{
-    margin-left: 35px;
-}
-
-.plus{
-margin-left: 20px;
-
-}
-
-.fa-clock-rotate-left{
-
-    margin-bottom: 30px;
+ul, li{
+    list-style-type: none;
+    margin-bottom: 20px;
 }
 .child2{
     width: 800px;
     height: 650px;
     position: absolute;
-    margin-left: 400px;
-
+    top: 0;
+    left: 400px;
 }
 
 h2{
     width: 300px;
     height: auto;
-    margin-top: 50px;
-   
+    margin-top: 50px;   
 }
 
 h1{
     margin-top: -20px;
-    margin-left: -300px;
+    margin-left: -285px;
     color: white;
+}
+.fa-solid:hover{
+    color: rgb(42, 132, 59);
 }
 
 h2{
@@ -120,63 +110,55 @@ h2{
 }
 
 .box1{
-    width: 800px;
+    width: 780px;
     max-width: 700px;
     min-width: 400px;
     height: 3em;
     margin-left: 100px;
     background-color: white;
-    border-radius: 20px;
-    
+    border-radius: 20px;    
     margin-bottom: 40px;
 }
 
 .box1 p {
-    padding-top:10px;
-    
+    padding-top:10px;    
 }
 
-.box1 span{
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-
-.box1 p .pink{
+.pk{
     margin-left: 20px;
 }
 
-.box1 p .blue{
-    margin-left: 16px;
+.bl{
+    margin-left: 0px;
     margin-right: 0px;
-
 }
-
 
 input[type="text"]{
-    border: 0px solid white ;
+    border: 0px solid;
+    background-color: transparent;
     text-decoration: none;
     margin-left: 20px;
     width: 240px;
-    height:2em ;
-
-       
+    height:2em ;       
 }
 
 .fa-clock{
     margin-left: 220px;
     font-size: 20px;
 }
+.ic {
 
+    color:var(--color2);
+}
 .fa-calendar-week{
     margin-left: 20px;
     font-size: 20px;
 }
 
 .shedule{
-    width: 600px;
+    width: 620px;
     height: 3em;
-    margin-left: 75px;
+    margin-left: 100px;
     background-color: white;
     border-radius: 15px;
 }
@@ -185,51 +167,28 @@ input[type="text"]{
     padding-top: 15px;
 }
 
-.shedule p .pink{
-    margin-left: 20px;
-    margin-right: 20px;
+.space-Between{
+    margin-left:5px ;
+    margin-right: 5px;
 }
 
-.shedule p .blue{
+.pk, .bl, .yl{
     margin-left: 10px;
     margin-right: 20px;
 }
 
-.shedule p .yellow{
-    margin-left: 10px;
-    margin-right: 20px;
+/*for time  */
+.sp0{
+    margin-left: 386px;
 }
-
-.shedule p .sp{
-    margin-left: 360px;
-}
-p .fa-circle-check{
-    margin-left:20px;
-}
-
 .sp1{
     margin-left: 297px;
 }
 
-
-p .fa-circle{
-    margin-left: 18px;
-}
-
 .sp2{
-    margin-left: 305px;
-}
-
-
-p .fa-circle{
-    margin-left: 18px;
+    margin-left: 310px;
 }
 
 .sp3{
-    margin-left: 255px;
-}
-
-
-p .fa-circle{
-    margin-left: 18px;
+    margin-left: 265px;
 }
