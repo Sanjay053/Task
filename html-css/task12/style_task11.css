@@ -42,7 +42,7 @@ body{
     width: 305px;
     height: 305px;
     position: absolute;
-    top: calc(50% + 20px);
+    top: calc(50% + 17px);
     left: calc(50% - 290px);
     border-radius: 20px 0 20px 20px;
     background: orange;
@@ -53,7 +53,7 @@ body{
     width: 305px;
     height: 305px;
     position: absolute;
-    top: calc(50% + 20px);
+    top: calc(50% + 17px);
     left: calc(50% + 17px);
     background: #171771;
     border-radius: 0 20px 20px 20px;
