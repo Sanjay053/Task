@@ -1,38 +1,38 @@
-body{
+body {
     margin: 0px;
     font-family: sans-serif;
     overflow: hidden;
 }
-.parent{
+
+.parent {
     width: 100%;
     max-width: 1400px;
     min-width: 1200px;
     height: 670px;
-    margin:20px;
+    margin: 20px;
     border-radius: 20px;
-    position: absolute;    
-    left: calc(50% - 700px);
+    position: absolute;
     background-color: var(--color1);
 }
 
-:root{
-    --color1:#9370DB;
-    --color2:#FF00FF;
+:root {
+    --color1: #9370DB;
+    --color2: #FF00FF;
 }
 
-.pink{
-    color: palevioletred;       
+.pink {
+    color: palevioletred;
 }
 
-.blue{
-    color: aqua; 
+.blue {
+    color: aqua;
 }
 
-.yellow{
-    color: yellow;  
+.yellow {
+    color: yellow;
 }
 
-.child1{
+.child1 {
     width: 300px;
     height: 650px;
     position: absolute;
@@ -43,41 +43,49 @@ body{
     border-radius: 10px 0px 0px 10px;
 }
 
-img{
+img {
     width: 75px;
     height: 75px;
     margin: 30px;
-    border-radius:100px ;
+    border-radius: 100px;
 }
 
-.plus, [class$=left], [class$=gear], .space, [class$=circle]{
+.plus,
+[class$=left],
+[class$=gear],
+.space,
+[class$=circle] {
     color: rgba(0, 0, 0, 0.2);
 }
 
-.profile p{
+.profile p {
     position: absolute;
     margin-top: -100px;
     margin-left: 120px;
     font-size: 20px;
 }
 
-.profile p span{
+.profile p span {
     color: var(--color1);
     font-size: 25px;
     font-weight: bold;
 }
-hr{
-    width:230px;
+
+hr {
+    width: 230px;
     margin-left: 30px;
-    border:2px solid #9370DB;
+    border: 2px solid #9370DB;
     margin-top: 0px;
     margin-bottom: 40px;
 }
-ul, li{
+
+ul,
+li {
     list-style-type: none;
     margin-bottom: 20px;
 }
-.child2{
+
+.child2 {
     width: 800px;
     height: 650px;
     position: absolute;
@@ -85,80 +93,80 @@ ul, li{
     left: 400px;
 }
 
-h2{
-    width: 300px;
-    height: auto;
-    margin-top: 50px;   
-}
-
-h1{
-    margin-top: -20px;
-    margin-left: -285px;
+h2 {
+    margin: 50px 0 0 10px;
+    font-size: xxx-large;
     color: white;
 }
-.fa-solid:hover{
+
+h1 {
+    width: 500px;
+    margin: 0;
+    font-size: xxx-large;
+    color: white;
+}
+
+.fa-solid:hover {
     color: rgb(42, 132, 59);
 }
 
-h2{
-    margin-left: -400px;
-    color: white;
-}
 
-.first-text{
+.first-text {
     font-size: 20px;
 }
 
-.box1{
-    width: 780px;
+.box1 {
+    width: 650px;
     max-width: 700px;
     min-width: 400px;
     height: 3em;
-    margin-left: 100px;
+    margin-left: 50px;
     background-color: white;
-    border-radius: 20px;    
+    border-radius: 15px;
     margin-bottom: 40px;
 }
 
 .box1 p {
-    padding-top:10px;    
+    padding: 10px 10px 10px;
 }
 
-.pk{
+.pk {
     margin-left: 20px;
 }
 
-.bl{
+.bl {
     margin-left: 0px;
     margin-right: 0px;
 }
 
-input[type="text"]{
+input[type="text"] {
     border: 0px solid;
     background-color: transparent;
     text-decoration: none;
     margin-left: 20px;
     width: 240px;
-    height:2em ;       
+    height: 2em;
 }
 
-.fa-clock{
+.fa-clock {
     margin-left: 220px;
     font-size: 20px;
 }
+
 .ic {
 
-    color:var(--color2);
+    color: var(--color2);
 }
-.fa-calendar-week{
+
+.fa-calendar-week {
     margin-left: 20px;
     font-size: 20px;
 }
 
-.shedule{
+.shedule {
     width: 620px;
     height: 3em;
-    margin-left: 100px;
+    margin-left: 60px;
     background-color: white;
     border-radius: 15px;
 }
@@ -167,28 +175,31 @@ input[type="text"]{
     padding-top: 15px;
 }
 
-.space-Between{
-    margin-left:5px ;
+.space-Between {
+    margin-left: 5px;
     margin-right: 5px;
 }
 
-.pk, .bl, .yl{
+.pk,
+.bl,
+.yl {
     margin-left: 10px;
     margin-right: 20px;
 }
 
 /*for time  */
-.sp0{
-    margin-left: 386px;
-}
-.sp1{
-    margin-left: 297px;
+.sp0 {
+    margin-left: 400px;
 }
 
-.sp2{
+.sp1 {
     margin-left: 310px;
 }
 
-.sp3{
-    margin-left: 265px;
+.sp2 {
+    margin-left: 322px;
+}
+
+.sp3 {
+    margin-left: 277px;
 }
