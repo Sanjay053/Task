@@ -1,33 +1,30 @@
-body{
+body {
     padding: 0;
     margin: 0;
 }
 
-:root{
-    color : white;
-    
-
+:root {
+    color: white;
 }
+
 .main {
     width: 650px;
     height: 650px;
     position: absolute;
-    top: calc(50% - 325px);
-    left: calc(50% - 325px);
 }
 
-.red{
+.red {
     width: 305px;
     height: 305px;
     border-radius: 20px 20px 0 20px;
-    background: red;    
+    background: red;
     z-index: 1;
     position: absolute;
     top: calc(50% - 290px);
     left: calc(50% - 290px);
 }
 
-.green{
+.green {
     width: 305px;
     height: 305px;
     position: absolute;
@@ -38,7 +35,7 @@ body{
     z-index: 1;
 }
 
-.orange{
+.orange {
     width: 305px;
     height: 305px;
     position: absolute;
@@ -49,7 +46,7 @@ body{
     z-index: 1;
 }
 
-.blue{
+.blue {
     width: 305px;
     height: 305px;
     position: absolute;
@@ -60,8 +57,8 @@ body{
     z-index: 1;
 }
 
-p{
-    
+p {
+
     font-size: 20px;
     font-weight: bolder;
     display: flex;
@@ -70,19 +67,19 @@ p{
 
 }
 
-    .para {
-        margin-top: 30%;
-    
+.para {
+    margin-top: 30%;
+
 }
 
-.g{
-background-color: #625858;
-display: block;
-position: absolute;
-border-radius: 10px 10px 0 0;
+.g {
+    background-color: #625858;
+    display: block;
+    position: absolute;
+    border-radius: 10px 10px 0 0;
 }
 
-.top-left{
+.top-left {
     width: 100px;
     padding-left: 30px;
     padding-top: 10px;
@@ -91,7 +88,7 @@ border-radius: 10px 10px 0 0;
     left: calc(25% - 40px);
 }
 
-.top-right{
+.top-right {
     width: 100px;
     padding-left: 30px;
     padding-right: 30px;
@@ -101,7 +98,7 @@ border-radius: 10px 10px 0 0;
     left: calc(75% - 75px);
 }
 
-.left-top{
+.left-top {
     width: 150px;
     padding: 10px 0px 5.6px 60px;
     transform: rotate(-90deg);
@@ -109,7 +106,7 @@ border-radius: 10px 10px 0 0;
     top: calc(25% - 0px);
 }
 
-.left-bottom{
+.left-bottom {
     width: 150px;
     padding: 10px 10px 5.6px 40px;
     transform: rotate(-90deg);
